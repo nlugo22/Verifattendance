@@ -6,7 +6,7 @@ const MenuBar = () => {
   const buttons = ["Calendar", "Attendance", "Classes"];
 
   return (
-    <div className="flex border-4 rounded-2xl border-r-red-500 bg-white w-1/9 h-full">
+    <div className="flex rounded-2xl bg-white/20 backdrop-blur-lg w-1/10 shadow-lg h-[calc(100%-1rem)] m-2">
       <div className="flex flex-col items-center w-full gap-2 mt-2">
         {buttons.map((name) => (
           <MenuBtn key={name} btnName={name} selected={selectedBtn === name} onClick={() => setSelectedBtn(name)} />
